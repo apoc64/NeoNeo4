@@ -11,6 +11,30 @@
 		252E136725D0DB7100A10734 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E136625D0DB7100A10734 /* ContentView.swift */; };
 		252E136925D0DB7700A10734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 252E136825D0DB7700A10734 /* Assets.xcassets */; };
 		252E136C25D0DB7700A10734 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 252E136B25D0DB7700A10734 /* Preview Assets.xcassets */; };
+		252E138125D0DBA800A10734 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E137525D0DBA800A10734 /* Logger.swift */; };
+		252E138225D0DBA800A10734 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E137625D0DBA800A10734 /* Container.swift */; };
+		252E138325D0DBA800A10734 /* ServiceResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E137725D0DBA800A10734 /* ServiceResponseModel.swift */; };
+		252E138425D0DBA800A10734 /* Date + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E137925D0DBA800A10734 /* Date + Extensions.swift */; };
+		252E138525D0DBA800A10734 /* Notifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E137A25D0DBA800A10734 /* Notifiable.swift */; };
+		252E138625D0DBA800A10734 /* UserDefaultable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E137B25D0DBA800A10734 /* UserDefaultable.swift */; };
+		252E138725D0DBA800A10734 /* HTTPHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E137C25D0DBA800A10734 /* HTTPHelpers.swift */; };
+		252E138825D0DBA800A10734 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E137D25D0DBA800A10734 /* NetworkingManager.swift */; };
+		252E138925D0DBA800A10734 /* ServiceHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E137E25D0DBA800A10734 /* ServiceHelpers.swift */; };
+		252E138A25D0DBA800A10734 /* ContextProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E137F25D0DBA800A10734 /* ContextProviding.swift */; };
+		252E138B25D0DBA800A10734 /* HelperConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E138025D0DBA800A10734 /* HelperConfig.swift */; };
+		252E139425D0DBD800A10734 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E138E25D0DBD800A10734 /* DetailView.swift */; };
+		252E139525D0DBD800A10734 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E138F25D0DBD800A10734 /* SettingsView.swift */; };
+		252E139625D0DBD800A10734 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E139025D0DBD800A10734 /* MainTabBar.swift */; };
+		252E139725D0DBD800A10734 /* NeoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E139125D0DBD800A10734 /* NeoListView.swift */; };
+		252E139825D0DBD800A10734 /* TextListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E139225D0DBD800A10734 /* TextListCell.swift */; };
+		252E139925D0DBD800A10734 /* CoinListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E139325D0DBD800A10734 /* CoinListView.swift */; };
+		252E13A025D0DC3E00A10734 /* NEOViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E139C25D0DC3E00A10734 /* NEOViewModel.swift */; };
+		252E13A125D0DC3E00A10734 /* CoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E139D25D0DC3E00A10734 /* CoinViewModel.swift */; };
+		252E13A225D0DC3E00A10734 /* TextDisplayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E139F25D0DC3E00A10734 /* TextDisplayViewModel.swift */; };
+		252E13A725D0DC6E00A10734 /* CryptoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E13A525D0DC6E00A10734 /* CryptoResponse.swift */; };
+		252E13A825D0DC6E00A10734 /* NEOResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E13A625D0DC6E00A10734 /* NEOResponse.swift */; };
+		252E13AC25D0DC7600A10734 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E13AB25D0DC7600A10734 /* Service.swift */; };
+		252E13B025D0DC8000A10734 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E13AF25D0DC8000A10734 /* Environment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +44,30 @@
 		252E136825D0DB7700A10734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		252E136B25D0DB7700A10734 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		252E136D25D0DB7700A10734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		252E137525D0DBA800A10734 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		252E137625D0DBA800A10734 /* Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		252E137725D0DBA800A10734 /* ServiceResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceResponseModel.swift; sourceTree = "<group>"; };
+		252E137925D0DBA800A10734 /* Date + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date + Extensions.swift"; sourceTree = "<group>"; };
+		252E137A25D0DBA800A10734 /* Notifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifiable.swift; sourceTree = "<group>"; };
+		252E137B25D0DBA800A10734 /* UserDefaultable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultable.swift; sourceTree = "<group>"; };
+		252E137C25D0DBA800A10734 /* HTTPHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHelpers.swift; sourceTree = "<group>"; };
+		252E137D25D0DBA800A10734 /* NetworkingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		252E137E25D0DBA800A10734 /* ServiceHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceHelpers.swift; sourceTree = "<group>"; };
+		252E137F25D0DBA800A10734 /* ContextProviding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextProviding.swift; sourceTree = "<group>"; };
+		252E138025D0DBA800A10734 /* HelperConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperConfig.swift; sourceTree = "<group>"; };
+		252E138E25D0DBD800A10734 /* DetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		252E138F25D0DBD800A10734 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		252E139025D0DBD800A10734 /* MainTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		252E139125D0DBD800A10734 /* NeoListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeoListView.swift; sourceTree = "<group>"; };
+		252E139225D0DBD800A10734 /* TextListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextListCell.swift; sourceTree = "<group>"; };
+		252E139325D0DBD800A10734 /* CoinListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinListView.swift; sourceTree = "<group>"; };
+		252E139C25D0DC3E00A10734 /* NEOViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NEOViewModel.swift; sourceTree = "<group>"; };
+		252E139D25D0DC3E00A10734 /* CoinViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinViewModel.swift; sourceTree = "<group>"; };
+		252E139F25D0DC3E00A10734 /* TextDisplayViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextDisplayViewModel.swift; sourceTree = "<group>"; };
+		252E13A525D0DC6E00A10734 /* CryptoResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoResponse.swift; sourceTree = "<group>"; };
+		252E13A625D0DC6E00A10734 /* NEOResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NEOResponse.swift; sourceTree = "<group>"; };
+		252E13AB25D0DC7600A10734 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		252E13AF25D0DC8000A10734 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +86,7 @@
 			children = (
 				252E136325D0DB7100A10734 /* NeoNeo4 */,
 				252E136225D0DB7100A10734 /* Products */,
+				252E137425D0DBA800A10734 /* Helper */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,10 +101,16 @@
 		252E136325D0DB7100A10734 /* NeoNeo4 */ = {
 			isa = PBXGroup;
 			children = (
+				252E138D25D0DBD800A10734 /* Views */,
 				252E136425D0DB7100A10734 /* NeoNeo4App.swift */,
 				252E136625D0DB7100A10734 /* ContentView.swift */,
 				252E136825D0DB7700A10734 /* Assets.xcassets */,
 				252E136D25D0DB7700A10734 /* Info.plist */,
+				252E139B25D0DC3E00A10734 /* ViewModels */,
+				252E139E25D0DC3E00A10734 /* ViewModelProtocols */,
+				252E13A425D0DC6E00A10734 /* ServiceResponseModels */,
+				252E13AA25D0DC7600A10734 /* Networking */,
+				252E13AE25D0DC8000A10734 /* Config */,
 				252E136A25D0DB7700A10734 /* Preview Content */,
 			);
 			path = NeoNeo4;
@@ -67,6 +122,87 @@
 				252E136B25D0DB7700A10734 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		252E137425D0DBA800A10734 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				252E137525D0DBA800A10734 /* Logger.swift */,
+				252E137625D0DBA800A10734 /* Container.swift */,
+				252E137725D0DBA800A10734 /* ServiceResponseModel.swift */,
+				252E137825D0DBA800A10734 /* Extensions */,
+				252E137A25D0DBA800A10734 /* Notifiable.swift */,
+				252E137B25D0DBA800A10734 /* UserDefaultable.swift */,
+				252E137C25D0DBA800A10734 /* HTTPHelpers.swift */,
+				252E137D25D0DBA800A10734 /* NetworkingManager.swift */,
+				252E137E25D0DBA800A10734 /* ServiceHelpers.swift */,
+				252E137F25D0DBA800A10734 /* ContextProviding.swift */,
+				252E138025D0DBA800A10734 /* HelperConfig.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		252E137825D0DBA800A10734 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				252E137925D0DBA800A10734 /* Date + Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		252E138D25D0DBD800A10734 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				252E138E25D0DBD800A10734 /* DetailView.swift */,
+				252E138F25D0DBD800A10734 /* SettingsView.swift */,
+				252E139025D0DBD800A10734 /* MainTabBar.swift */,
+				252E139125D0DBD800A10734 /* NeoListView.swift */,
+				252E139225D0DBD800A10734 /* TextListCell.swift */,
+				252E139325D0DBD800A10734 /* CoinListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		252E139B25D0DC3E00A10734 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				252E139C25D0DC3E00A10734 /* NEOViewModel.swift */,
+				252E139D25D0DC3E00A10734 /* CoinViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		252E139E25D0DC3E00A10734 /* ViewModelProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				252E139F25D0DC3E00A10734 /* TextDisplayViewModel.swift */,
+			);
+			path = ViewModelProtocols;
+			sourceTree = "<group>";
+		};
+		252E13A425D0DC6E00A10734 /* ServiceResponseModels */ = {
+			isa = PBXGroup;
+			children = (
+				252E13A525D0DC6E00A10734 /* CryptoResponse.swift */,
+				252E13A625D0DC6E00A10734 /* NEOResponse.swift */,
+			);
+			path = ServiceResponseModels;
+			sourceTree = "<group>";
+		};
+		252E13AA25D0DC7600A10734 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				252E13AB25D0DC7600A10734 /* Service.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		252E13AE25D0DC8000A10734 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				252E13AF25D0DC8000A10734 /* Environment.swift */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +274,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				252E139925D0DBD800A10734 /* CoinListView.swift in Sources */,
+				252E139525D0DBD800A10734 /* SettingsView.swift in Sources */,
+				252E13AC25D0DC7600A10734 /* Service.swift in Sources */,
+				252E138625D0DBA800A10734 /* UserDefaultable.swift in Sources */,
+				252E13A025D0DC3E00A10734 /* NEOViewModel.swift in Sources */,
+				252E138325D0DBA800A10734 /* ServiceResponseModel.swift in Sources */,
+				252E138425D0DBA800A10734 /* Date + Extensions.swift in Sources */,
+				252E13A225D0DC3E00A10734 /* TextDisplayViewModel.swift in Sources */,
+				252E139425D0DBD800A10734 /* DetailView.swift in Sources */,
+				252E138825D0DBA800A10734 /* NetworkingManager.swift in Sources */,
+				252E138B25D0DBA800A10734 /* HelperConfig.swift in Sources */,
+				252E13A125D0DC3E00A10734 /* CoinViewModel.swift in Sources */,
+				252E138A25D0DBA800A10734 /* ContextProviding.swift in Sources */,
+				252E139725D0DBD800A10734 /* NeoListView.swift in Sources */,
+				252E13A825D0DC6E00A10734 /* NEOResponse.swift in Sources */,
 				252E136725D0DB7100A10734 /* ContentView.swift in Sources */,
+				252E138225D0DBA800A10734 /* Container.swift in Sources */,
+				252E138525D0DBA800A10734 /* Notifiable.swift in Sources */,
+				252E139825D0DBD800A10734 /* TextListCell.swift in Sources */,
+				252E138925D0DBA800A10734 /* ServiceHelpers.swift in Sources */,
+				252E139625D0DBD800A10734 /* MainTabBar.swift in Sources */,
+				252E13B025D0DC8000A10734 /* Environment.swift in Sources */,
+				252E138125D0DBA800A10734 /* Logger.swift in Sources */,
+				252E138725D0DBA800A10734 /* HTTPHelpers.swift in Sources */,
 				252E136525D0DB7100A10734 /* NeoNeo4App.swift in Sources */,
+				252E13A725D0DC6E00A10734 /* CryptoResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
