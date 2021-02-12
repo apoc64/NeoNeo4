@@ -1,0 +1,22 @@
+{
+    "status": "success",
+    "data": {
+        
+        "coins": [
+            {
+                "id": 1,
+                "uuid": "Qwsogvtv82FCd",
+                "symbol": "BTC",
+                "name": "Bitcoin",
+                "price": "33056.3691166773"
+            },
+            {
+                "id": 2,
+                "uuid": "razxDUgYGNAdQ",
+                "symbol": "ETH",
+                "name": "Ethereum",
+                "price": "1315.0375188228"
+            }
+        ]
+    }
+}

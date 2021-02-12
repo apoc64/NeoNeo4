@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		252E136525D0DB7100A10734 /* NeoNeo4App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E136425D0DB7100A10734 /* NeoNeo4App.swift */; };
-		252E136725D0DB7100A10734 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E136625D0DB7100A10734 /* ContentView.swift */; };
 		252E136925D0DB7700A10734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 252E136825D0DB7700A10734 /* Assets.xcassets */; };
 		252E136C25D0DB7700A10734 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 252E136B25D0DB7700A10734 /* Preview Assets.xcassets */; };
 		252E138125D0DBA800A10734 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E137525D0DBA800A10734 /* Logger.swift */; };
@@ -35,12 +34,29 @@
 		252E13A825D0DC6E00A10734 /* NEOResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E13A625D0DC6E00A10734 /* NEOResponse.swift */; };
 		252E13AC25D0DC7600A10734 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E13AB25D0DC7600A10734 /* Service.swift */; };
 		252E13B025D0DC8000A10734 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E13AF25D0DC8000A10734 /* Environment.swift */; };
+		2562FCA925D6055A00017123 /* MockUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2562FC9F25D6055A00017123 /* MockUserDefaults.swift */; };
+		2562FCAA25D6055A00017123 /* MockNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2562FCA025D6055A00017123 /* MockNotificationCenter.swift */; };
+		2562FCAB25D6055A00017123 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2562FCA125D6055A00017123 /* MockURLSession.swift */; };
+		2562FCAC25D6055A00017123 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2562FCA225D6055A00017123 /* TestHelper.swift */; };
+		2562FCAD25D6055A00017123 /* CoinViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2562FCA425D6055A00017123 /* CoinViewModelTests.swift */; };
+		2562FCAE25D6055A00017123 /* NeoViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2562FCA525D6055A00017123 /* NeoViewModelTests.swift */; };
+		2562FCAF25D6055A00017123 /* neoResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 2562FCA725D6055A00017123 /* neoResponse.json */; };
+		2562FCB025D6055A00017123 /* coinResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 2562FCA825D6055A00017123 /* coinResponse.json */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2562FC9525D6051F00017123 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 252E135925D0DB7100A10734 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 252E136025D0DB7100A10734;
+			remoteInfo = NeoNeo4;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		252E136125D0DB7100A10734 /* NeoNeo4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeoNeo4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		252E136425D0DB7100A10734 /* NeoNeo4App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeoNeo4App.swift; sourceTree = "<group>"; };
-		252E136625D0DB7100A10734 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		252E136825D0DB7700A10734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		252E136B25D0DB7700A10734 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		252E136D25D0DB7700A10734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,10 +84,27 @@
 		252E13A625D0DC6E00A10734 /* NEOResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NEOResponse.swift; sourceTree = "<group>"; };
 		252E13AB25D0DC7600A10734 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		252E13AF25D0DC8000A10734 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		2562FC9025D6051F00017123 /* NeoNeo4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeoNeo4Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2562FC9425D6051F00017123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2562FC9F25D6055A00017123 /* MockUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockUserDefaults.swift; sourceTree = "<group>"; };
+		2562FCA025D6055A00017123 /* MockNotificationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockNotificationCenter.swift; sourceTree = "<group>"; };
+		2562FCA125D6055A00017123 /* MockURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		2562FCA225D6055A00017123 /* TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
+		2562FCA425D6055A00017123 /* CoinViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinViewModelTests.swift; sourceTree = "<group>"; };
+		2562FCA525D6055A00017123 /* NeoViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeoViewModelTests.swift; sourceTree = "<group>"; };
+		2562FCA725D6055A00017123 /* neoResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = neoResponse.json; sourceTree = "<group>"; };
+		2562FCA825D6055A00017123 /* coinResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = coinResponse.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		252E135E25D0DB7100A10734 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2562FC8D25D6051F00017123 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -85,8 +118,9 @@
 			isa = PBXGroup;
 			children = (
 				252E136325D0DB7100A10734 /* NeoNeo4 */,
-				252E136225D0DB7100A10734 /* Products */,
 				252E137425D0DBA800A10734 /* Helper */,
+				2562FC9125D6051F00017123 /* NeoNeo4Tests */,
+				252E136225D0DB7100A10734 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				252E136125D0DB7100A10734 /* NeoNeo4.app */,
+				2562FC9025D6051F00017123 /* NeoNeo4Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,11 +136,10 @@
 		252E136325D0DB7100A10734 /* NeoNeo4 */ = {
 			isa = PBXGroup;
 			children = (
-				252E138D25D0DBD800A10734 /* Views */,
-				252E136425D0DB7100A10734 /* NeoNeo4App.swift */,
-				252E136625D0DB7100A10734 /* ContentView.swift */,
-				252E136825D0DB7700A10734 /* Assets.xcassets */,
 				252E136D25D0DB7700A10734 /* Info.plist */,
+				252E136825D0DB7700A10734 /* Assets.xcassets */,
+				252E136425D0DB7100A10734 /* NeoNeo4App.swift */,
+				252E138D25D0DBD800A10734 /* Views */,
 				252E139B25D0DC3E00A10734 /* ViewModels */,
 				252E139E25D0DC3E00A10734 /* ViewModelProtocols */,
 				252E13A425D0DC6E00A10734 /* ServiceResponseModels */,
@@ -127,17 +161,12 @@
 		252E137425D0DBA800A10734 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				252E137525D0DBA800A10734 /* Logger.swift */,
 				252E137625D0DBA800A10734 /* Container.swift */,
-				252E137725D0DBA800A10734 /* ServiceResponseModel.swift */,
-				252E137825D0DBA800A10734 /* Extensions */,
-				252E137A25D0DBA800A10734 /* Notifiable.swift */,
-				252E137B25D0DBA800A10734 /* UserDefaultable.swift */,
-				252E137C25D0DBA800A10734 /* HTTPHelpers.swift */,
-				252E137D25D0DBA800A10734 /* NetworkingManager.swift */,
-				252E137E25D0DBA800A10734 /* ServiceHelpers.swift */,
-				252E137F25D0DBA800A10734 /* ContextProviding.swift */,
 				252E138025D0DBA800A10734 /* HelperConfig.swift */,
+				252E137525D0DBA800A10734 /* Logger.swift */,
+				252E137D25D0DBA800A10734 /* NetworkingManager.swift */,
+				252E137825D0DBA800A10734 /* Extensions */,
+				2562FC8A25D5FFD900017123 /* Protocols */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -205,6 +234,59 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
+		2562FC8A25D5FFD900017123 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				252E137725D0DBA800A10734 /* ServiceResponseModel.swift */,
+				252E137A25D0DBA800A10734 /* Notifiable.swift */,
+				252E137B25D0DBA800A10734 /* UserDefaultable.swift */,
+				252E137C25D0DBA800A10734 /* HTTPHelpers.swift */,
+				252E137E25D0DBA800A10734 /* ServiceHelpers.swift */,
+				252E137F25D0DBA800A10734 /* ContextProviding.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2562FC9125D6051F00017123 /* NeoNeo4Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2562FCA625D6055A00017123 /* MockResponses */,
+				2562FC9E25D6055A00017123 /* TestHelper */,
+				2562FCA325D6055A00017123 /* ViewModelTests */,
+				2562FC9425D6051F00017123 /* Info.plist */,
+			);
+			path = NeoNeo4Tests;
+			sourceTree = "<group>";
+		};
+		2562FC9E25D6055A00017123 /* TestHelper */ = {
+			isa = PBXGroup;
+			children = (
+				2562FC9F25D6055A00017123 /* MockUserDefaults.swift */,
+				2562FCA025D6055A00017123 /* MockNotificationCenter.swift */,
+				2562FCA125D6055A00017123 /* MockURLSession.swift */,
+				2562FCA225D6055A00017123 /* TestHelper.swift */,
+			);
+			path = TestHelper;
+			sourceTree = "<group>";
+		};
+		2562FCA325D6055A00017123 /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				2562FCA425D6055A00017123 /* CoinViewModelTests.swift */,
+				2562FCA525D6055A00017123 /* NeoViewModelTests.swift */,
+			);
+			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
+		2562FCA625D6055A00017123 /* MockResponses */ = {
+			isa = PBXGroup;
+			children = (
+				2562FCA725D6055A00017123 /* neoResponse.json */,
+				2562FCA825D6055A00017123 /* coinResponse.json */,
+			);
+			path = MockResponses;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -225,6 +307,24 @@
 			productReference = 252E136125D0DB7100A10734 /* NeoNeo4.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2562FC8F25D6051F00017123 /* NeoNeo4Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2562FC9725D6051F00017123 /* Build configuration list for PBXNativeTarget "NeoNeo4Tests" */;
+			buildPhases = (
+				2562FC8C25D6051F00017123 /* Sources */,
+				2562FC8D25D6051F00017123 /* Frameworks */,
+				2562FC8E25D6051F00017123 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2562FC9625D6051F00017123 /* PBXTargetDependency */,
+			);
+			name = NeoNeo4Tests;
+			productName = NeoNeo4Tests;
+			productReference = 2562FC9025D6051F00017123 /* NeoNeo4Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -236,6 +336,10 @@
 				TargetAttributes = {
 					252E136025D0DB7100A10734 = {
 						CreatedOnToolsVersion = 12.4;
+					};
+					2562FC8F25D6051F00017123 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 252E136025D0DB7100A10734;
 					};
 				};
 			};
@@ -253,6 +357,7 @@
 			projectRoot = "";
 			targets = (
 				252E136025D0DB7100A10734 /* NeoNeo4 */,
+				2562FC8F25D6051F00017123 /* NeoNeo4Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -264,6 +369,15 @@
 			files = (
 				252E136C25D0DB7700A10734 /* Preview Assets.xcassets in Resources */,
 				252E136925D0DB7700A10734 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2562FC8E25D6051F00017123 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2562FCAF25D6055A00017123 /* neoResponse.json in Resources */,
+				2562FCB025D6055A00017123 /* coinResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +403,6 @@
 				252E138A25D0DBA800A10734 /* ContextProviding.swift in Sources */,
 				252E139725D0DBD800A10734 /* NeoListView.swift in Sources */,
 				252E13A825D0DC6E00A10734 /* NEOResponse.swift in Sources */,
-				252E136725D0DB7100A10734 /* ContentView.swift in Sources */,
 				252E138225D0DBA800A10734 /* Container.swift in Sources */,
 				252E138525D0DBA800A10734 /* Notifiable.swift in Sources */,
 				252E139825D0DBD800A10734 /* TextListCell.swift in Sources */,
@@ -303,7 +416,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2562FC8C25D6051F00017123 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2562FCAB25D6055A00017123 /* MockURLSession.swift in Sources */,
+				2562FCAC25D6055A00017123 /* TestHelper.swift in Sources */,
+				2562FCA925D6055A00017123 /* MockUserDefaults.swift in Sources */,
+				2562FCAE25D6055A00017123 /* NeoViewModelTests.swift in Sources */,
+				2562FCAD25D6055A00017123 /* CoinViewModelTests.swift in Sources */,
+				2562FCAA25D6055A00017123 /* MockNotificationCenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2562FC9625D6051F00017123 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 252E136025D0DB7100A10734 /* NeoNeo4 */;
+			targetProxy = 2562FC9525D6051F00017123 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		252E136E25D0DB7700A10734 /* Debug */ = {
@@ -464,6 +598,44 @@
 			};
 			name = Release;
 		};
+		2562FC9825D6051F00017123 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NeoNeo4Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stevenschwedt.NeoNeo4Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeoNeo4.app/NeoNeo4";
+			};
+			name = Debug;
+		};
+		2562FC9925D6051F00017123 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NeoNeo4Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stevenschwedt.NeoNeo4Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NeoNeo4.app/NeoNeo4";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -481,6 +653,15 @@
 			buildConfigurations = (
 				252E137125D0DB7700A10734 /* Debug */,
 				252E137225D0DB7700A10734 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2562FC9725D6051F00017123 /* Build configuration list for PBXNativeTarget "NeoNeo4Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2562FC9825D6051F00017123 /* Debug */,
+				2562FC9925D6051F00017123 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
