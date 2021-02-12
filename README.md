@@ -53,7 +53,7 @@ Helper contains the protocol ServiceResponseModel, which allows Decodable models
 
 ```
 MyServiceResponseModel.performRequest(request: HTTPRequest) -> AnyPublisher<Self, Error>
-MyServiceResponseModel.performRequest() -> AnyPublisher<Self, Error> // performs a default request defined in the primary app
+MyServiceResponseModel.performRequest() -> AnyPublisher<Self, Error>  // performs a default request defined in the primary app
 
 // default request definition:
 extension MyServiceResponseModel: ServiceResponseModel {
@@ -68,7 +68,7 @@ extension MyServiceResponseModel: ServiceResponseModel {
 TestHelper configures mocks for the test suite. To configure TestHelper once, prior to running tests, the TestHelper class must be registered as the Principal Class in the test target's info.plist. Be sure to include the test target's name along with TestHelper.
 ```
 <key>NSPrincipalClass</key>
-<string>NeoNeo3Tests.TestHelper</string>
+<string>NeoNeo4Tests.TestHelper</string>
 ```
 
 Alternatively, you may run TestHelper.setup() in the setup for tests, but this will run multiple times unnecessarily.
