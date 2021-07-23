@@ -33,10 +33,9 @@ extension NEOResponse: ServiceResponseModel {
         HTTPRequest(
             service: Service.nasa,
             path: "/neo/rest/v1/neo/browse",
-            queryItems: [
+            additionalQueryItems: [
                 URLQueryItem(name: "page", value: "1"),
-                URLQueryItem(name: "size", value: "20"),
-                URLQueryItem(name: "api_key", value: "DEMO_KEY")
+                URLQueryItem(name: "size", value: "20")
         ])
     }
 }

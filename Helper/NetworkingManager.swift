@@ -20,6 +20,7 @@ extension URLSession: DataTaskPublishing {
     }
 }
 
+/** Handles networking for helper apps with injectable dataTaskPublisher defaulted to URLSession*/
 class NetworkingManager {
     static func dataTaskPublisher(for request: HTTPRequest) -> AnyPublisher<APIResponse, URLError> {
         log("Making Request for \(request.url?.absoluteString ?? "NIL URL")", priority: .medium)

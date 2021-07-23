@@ -84,6 +84,7 @@
 		252E13A625D0DC6E00A10734 /* NEOResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NEOResponse.swift; sourceTree = "<group>"; };
 		252E13AB25D0DC7600A10734 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		252E13AF25D0DC8000A10734 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		253BEE4E26AB49F2002E29AF /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		2562FC9025D6051F00017123 /* NeoNeo4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeoNeo4Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2562FC9425D6051F00017123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2562FC9F25D6055A00017123 /* MockUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockUserDefaults.swift; sourceTree = "<group>"; };
@@ -137,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				252E136D25D0DB7700A10734 /* Info.plist */,
+				253BEE4E26AB49F2002E29AF /* Config.xcconfig */,
 				252E136825D0DB7700A10734 /* Assets.xcassets */,
 				252E136425D0DB7100A10734 /* NeoNeo4App.swift */,
 				252E138D25D0DBD800A10734 /* Views */,
@@ -442,6 +444,7 @@
 /* Begin XCBuildConfiguration section */
 		252E136E25D0DB7700A10734 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 253BEE4E26AB49F2002E29AF /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -503,6 +506,7 @@
 		};
 		252E136F25D0DB7700A10734 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 253BEE4E26AB49F2002E29AF /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

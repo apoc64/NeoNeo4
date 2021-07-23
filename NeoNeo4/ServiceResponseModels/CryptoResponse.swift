@@ -28,7 +28,7 @@ extension CryptoResponse: ServiceResponseModel {
         HTTPRequest(
             service: Service.coin,
             path: "/v1/public/coins",
-            queryItems: [
+            additionalQueryItems: [
                 URLQueryItem(name: "base", value: "USD"),
                 URLQueryItem(name: "timePeriod", value: "24h")
         ])
