@@ -1,6 +1,6 @@
 # NeoNeo4
 
-This is an architectural prototype for building apps using SwiftUI and Combine. The iOS app fetches data from public APIs and displays the result in List Views.
+This is an architectural prototype for building apps using SwiftUI and Combine. The iOS app fetches data from public APIs, including NASA near earth objects (NEOs), and displays the result in List Views.
 
 ## Setup
 
@@ -9,6 +9,14 @@ With Xcode 12+, MacOS 10.15+, and an iOS Simulator running 14+ setup and the rep
 To run the app on the selected simulator or authorized device, press Command + R, or press the play button in the toolbar.
 
 To run the tests, press Command + U, or use the dropdown from the play button.
+
+## API Keys
+
+The app stores API keys in Config.xcconfig, which is gitignored. In Xcode, create a new file, and select configuration settings file. Add a NASA api key, or use DEMO_KEY:
+
+```
+NASA_API_KEY = DEMO_KEY
+```
 
 ## About the App
 
