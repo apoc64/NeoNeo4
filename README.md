@@ -12,7 +12,7 @@ To run the tests, press Command + U, or use the dropdown from the play button.
 
 ## About the App
 
-The app uses `@main` and the App protocol. It does not contain an AppDelegate, however, one can be added, using `@UIApplicationDelegateAdaptor`. Additionally, the app does not include UIKit. Upon initialization of the NeoNeo4 struct which conforms to the App protocol, it configures Helper.
+The app uses `@main` and the App protocol. It does not contain an AppDelegate, however, one can be added, using `@UIApplicationDelegateAdaptor`. Additionally, the app does not include UIKit. Upon the automatic initialization of the NeoNeo4App struct, it configures Helper.
 
 ## Helper
 
@@ -23,15 +23,15 @@ The Helper group is intended as a collection generalized helpers for building cl
 Helper wraps a number of Apple APIs in protocols, and configures them using dependency injection. TestHelper mocks these to aid in testing. When working on the primary app, these APIs are accessed with the following syntax:
 
 ```
-// Replacing URLSession.shared.dataTaskPublisher
-NetworkingManager.dataTaskPublisher(for: HTTPRequest)
+NetworkingManager.dataTaskPublisher(for: HTTPRequest)  // Replacing URLSession.shared.dataTaskPublisher
 // -> AnyPublisher<APIResponse, URLError>
 
-UserDefaults.fromContainer // Replacing UserDefaults.shared
-NotificationCenter.fromContainer // Replacing NotificationCenter.default
+UserDefaults.fromContainer  // Replacing UserDefaults.shared
+NotificationCenter.fromContainer  // Replacing NotificationCenter.default
+NSManagedObjectContext.fromContainer.main  // Provides a managed object context
 ```
 
-Initial setup can be done in the init an App marked with `@main`, or in an AppDelegate:
+Initial setup can be done in the init of a struct conforming to App, marked with `@main`, or in an AppDelegate:
 ```
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
@@ -53,7 +53,7 @@ Helper contains the protocol ServiceResponseModel, which allows Decodable models
 
 ```
 MyServiceResponseModel.performRequest(request: HTTPRequest) -> AnyPublisher<Self, Error>
-MyServiceResponseModel.performRequest() -> AnyPublisher<Self, Error> // performs a default request defined in the primary app
+MyServiceResponseModel.performRequest() -> AnyPublisher<Self, Error>  // performs a default request defined in the primary app
 
 // default request definition:
 extension MyServiceResponseModel: ServiceResponseModel {
@@ -68,7 +68,7 @@ extension MyServiceResponseModel: ServiceResponseModel {
 TestHelper configures mocks for the test suite. To configure TestHelper once, prior to running tests, the TestHelper class must be registered as the Principal Class in the test target's info.plist. Be sure to include the test target's name along with TestHelper.
 ```
 <key>NSPrincipalClass</key>
-<string>NeoNeo3Tests.TestHelper</string>
+<string>NeoNeo4Tests.TestHelper</string>
 ```
 
 Alternatively, you may run TestHelper.setup() in the setup for tests, but this will run multiple times unnecessarily.
