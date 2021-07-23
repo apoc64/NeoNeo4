@@ -41,7 +41,7 @@ enum Service: String, ServiceProviding {
     var defaultQueryItems: [URLQueryItem]? {
         switch self {
         case .nasa:
-            let apiKey = Bundle.main.infoDictionary?["NASA_API_KEY"] as? String
+            let apiKey = Helper.secrets?["NASA_API_KEY"] as? String
             
             return [URLQueryItem(name: "api_key", value: apiKey)]
         default:

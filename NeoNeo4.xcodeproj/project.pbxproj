@@ -34,6 +34,7 @@
 		252E13A825D0DC6E00A10734 /* NEOResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E13A625D0DC6E00A10734 /* NEOResponse.swift */; };
 		252E13AC25D0DC7600A10734 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E13AB25D0DC7600A10734 /* Service.swift */; };
 		252E13B025D0DC8000A10734 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E13AF25D0DC8000A10734 /* Environment.swift */; };
+		253BEE6F26AB7489002E29AF /* HelperSecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253BEE6E26AB7489002E29AF /* HelperSecrets.swift */; };
 		2562FCA925D6055A00017123 /* MockUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2562FC9F25D6055A00017123 /* MockUserDefaults.swift */; };
 		2562FCAA25D6055A00017123 /* MockNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2562FCA025D6055A00017123 /* MockNotificationCenter.swift */; };
 		2562FCAB25D6055A00017123 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2562FCA125D6055A00017123 /* MockURLSession.swift */; };
@@ -84,7 +85,8 @@
 		252E13A625D0DC6E00A10734 /* NEOResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NEOResponse.swift; sourceTree = "<group>"; };
 		252E13AB25D0DC7600A10734 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		252E13AF25D0DC8000A10734 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
-		253BEE4E26AB49F2002E29AF /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		253BEE6326AB6665002E29AF /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		253BEE6E26AB7489002E29AF /* HelperSecrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperSecrets.swift; sourceTree = "<group>"; };
 		2562FC9025D6051F00017123 /* NeoNeo4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeoNeo4Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2562FC9425D6051F00017123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2562FC9F25D6055A00017123 /* MockUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockUserDefaults.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		252E135825D0DB7100A10734 = {
 			isa = PBXGroup;
 			children = (
+				253BEE6326AB6665002E29AF /* Config.xcconfig */,
 				252E136325D0DB7100A10734 /* NeoNeo4 */,
 				252E137425D0DBA800A10734 /* Helper */,
 				2562FC9125D6051F00017123 /* NeoNeo4Tests */,
@@ -138,7 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				252E136D25D0DB7700A10734 /* Info.plist */,
-				253BEE4E26AB49F2002E29AF /* Config.xcconfig */,
 				252E136825D0DB7700A10734 /* Assets.xcassets */,
 				252E136425D0DB7100A10734 /* NeoNeo4App.swift */,
 				252E138D25D0DBD800A10734 /* Views */,
@@ -165,6 +167,7 @@
 			children = (
 				252E137625D0DBA800A10734 /* Container.swift */,
 				252E138025D0DBA800A10734 /* HelperConfig.swift */,
+				253BEE6E26AB7489002E29AF /* HelperSecrets.swift */,
 				252E137525D0DBA800A10734 /* Logger.swift */,
 				252E137D25D0DBA800A10734 /* NetworkingManager.swift */,
 				252E137825D0DBA800A10734 /* Extensions */,
@@ -409,6 +412,7 @@
 				252E138525D0DBA800A10734 /* Notifiable.swift in Sources */,
 				252E139825D0DBD800A10734 /* TextListCell.swift in Sources */,
 				252E138925D0DBA800A10734 /* ServiceHelpers.swift in Sources */,
+				253BEE6F26AB7489002E29AF /* HelperSecrets.swift in Sources */,
 				252E139625D0DBD800A10734 /* MainTabBar.swift in Sources */,
 				252E13B025D0DC8000A10734 /* Environment.swift in Sources */,
 				252E138125D0DBA800A10734 /* Logger.swift in Sources */,
@@ -444,7 +448,7 @@
 /* Begin XCBuildConfiguration section */
 		252E136E25D0DB7700A10734 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 253BEE4E26AB49F2002E29AF /* Config.xcconfig */;
+			baseConfigurationReference = 253BEE6326AB6665002E29AF /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -506,7 +510,7 @@
 		};
 		252E136F25D0DB7700A10734 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 253BEE4E26AB49F2002E29AF /* Config.xcconfig */;
+			baseConfigurationReference = 253BEE6326AB6665002E29AF /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

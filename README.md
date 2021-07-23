@@ -6,17 +6,20 @@ This is an architectural prototype for building apps using SwiftUI and Combine. 
 
 With Xcode 12+, MacOS 10.15+, and an iOS Simulator running 14+ setup and the repo cloned, open NeoNeo4.xcodeproj in Xcode.
 
-To run the app on the selected simulator or authorized device, press Command + R, or press the play button in the toolbar.
-
-To run the tests, press Command + U, or use the dropdown from the play button.
-
-## API Keys
+### API Keys
 
 The app stores API keys in Config.xcconfig, which is gitignored. In Xcode, create a new file, and select configuration settings file. Add a NASA api key, or use DEMO_KEY:
 
 ```
 NASA_API_KEY = DEMO_KEY
 ```
+
+### Running the app
+
+To run the app on the selected simulator or authorized device, press Command + R, or press the play button in the toolbar.
+
+To run the tests, press Command + U, or use the dropdown from the play button.
+
 
 ## About the App
 
