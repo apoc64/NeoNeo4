@@ -7,6 +7,17 @@ import Foundation
 @testable import NeoNeo4
 
 class MockUserDefaults: UserDefaultable {
+    func bool(forKey: String) -> Bool {
+        storedItems[forKey] as? Bool ?? false
+    }
+    
+    func integer(forKey: String) -> Int {
+        storedItems[forKey] as? Int ?? 0
+    }
+    
+    func object(forKey: String) -> Any? {
+        storedItems[forKey] as Any?
+    }
     
     func string(forKey: String) -> String? {
         storedItems[forKey] as? String

@@ -43,6 +43,8 @@
 		2562FCAE25D6055A00017123 /* NeoViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2562FCA525D6055A00017123 /* NeoViewModelTests.swift */; };
 		2562FCAF25D6055A00017123 /* neoResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 2562FCA725D6055A00017123 /* neoResponse.json */; };
 		2562FCB025D6055A00017123 /* coinResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 2562FCA825D6055A00017123 /* coinResponse.json */; };
+		25A2020126AC8BB500CF7763 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A2020026AC8BB500CF7763 /* UserSettings.swift */; };
+		25A2020626AC97C600CF7763 /* UserSettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A2020526AC97C600CF7763 /* UserSettingsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +99,8 @@
 		2562FCA525D6055A00017123 /* NeoViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeoViewModelTests.swift; sourceTree = "<group>"; };
 		2562FCA725D6055A00017123 /* neoResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = neoResponse.json; sourceTree = "<group>"; };
 		2562FCA825D6055A00017123 /* coinResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = coinResponse.json; sourceTree = "<group>"; };
+		25A2020026AC8BB500CF7763 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		25A2020526AC97C600CF7763 /* UserSettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,7 @@
 				252E136425D0DB7100A10734 /* NeoNeo4App.swift */,
 				252E138D25D0DBD800A10734 /* Views */,
 				252E139B25D0DC3E00A10734 /* ViewModels */,
+				25A201FF26AC8B7D00CF7763 /* Models */,
 				252E139E25D0DC3E00A10734 /* ViewModelProtocols */,
 				252E13A425D0DC6E00A10734 /* ServiceResponseModels */,
 				252E13AA25D0DC7600A10734 /* Networking */,
@@ -258,6 +263,7 @@
 				2562FCA625D6055A00017123 /* MockResponses */,
 				2562FC9E25D6055A00017123 /* TestHelper */,
 				2562FCA325D6055A00017123 /* ViewModelTests */,
+				25A2020426AC979A00CF7763 /* Model Tests */,
 				2562FC9425D6051F00017123 /* Info.plist */,
 			);
 			path = NeoNeo4Tests;
@@ -290,6 +296,22 @@
 				2562FCA825D6055A00017123 /* coinResponse.json */,
 			);
 			path = MockResponses;
+			sourceTree = "<group>";
+		};
+		25A201FF26AC8B7D00CF7763 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				25A2020026AC8BB500CF7763 /* UserSettings.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		25A2020426AC979A00CF7763 /* Model Tests */ = {
+			isa = PBXGroup;
+			children = (
+				25A2020526AC97C600CF7763 /* UserSettingsTests.swift */,
+			);
+			path = "Model Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,6 +428,7 @@
 				252E138B25D0DBA800A10734 /* HelperConfig.swift in Sources */,
 				252E13A125D0DC3E00A10734 /* CoinViewModel.swift in Sources */,
 				252E138A25D0DBA800A10734 /* ContextProviding.swift in Sources */,
+				25A2020126AC8BB500CF7763 /* UserSettings.swift in Sources */,
 				252E139725D0DBD800A10734 /* NeoListView.swift in Sources */,
 				252E13A825D0DC6E00A10734 /* NEOResponse.swift in Sources */,
 				252E138225D0DBA800A10734 /* Container.swift in Sources */,
@@ -430,6 +453,7 @@
 				2562FCAC25D6055A00017123 /* TestHelper.swift in Sources */,
 				2562FCA925D6055A00017123 /* MockUserDefaults.swift in Sources */,
 				2562FCAE25D6055A00017123 /* NeoViewModelTests.swift in Sources */,
+				25A2020626AC97C600CF7763 /* UserSettingsTests.swift in Sources */,
 				2562FCAD25D6055A00017123 /* CoinViewModelTests.swift in Sources */,
 				2562FCAA25D6055A00017123 /* MockNotificationCenter.swift in Sources */,
 			);

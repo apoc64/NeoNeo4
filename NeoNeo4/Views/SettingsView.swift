@@ -8,9 +8,51 @@
 
 import SwiftUI
 
+struct SettingsViewModel {
+    let username: String
+}
+
 struct SettingsView: View {
+    @ObservedObject var model = UserSettings()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            Form {
+                Section(header: Text("PROFILE")) {
+                    TextField("Username", text: $model.username)
+                    Toggle(isOn: $model.isPrivate) {
+                        Text("Private Account")
+                    }
+                }
+                
+                Section(header: Text("NOTIFICATIONS")) {
+                    Toggle(isOn: $model.notificationsEnabled) {
+                        Text("Enabled")
+                    }
+                    Picker(selection: $model.previewIndex, label: Text("Show Previews")) {
+                        ForEach(0 ..< model.previewOptions.count) {
+                            Text(model.previewOptions[$0])
+                        }
+                    }
+                }
+                
+                Section(header: Text("ABOUT")) {
+                    HStack {
+                        Text("Version")
+                        Spacer()
+                        Text(model.version)
+                    }
+                }
+                
+                Section {
+                    Button(action: {
+                        model.resetAllSettings()
+                    }) {
+                        Text("Reset All Settings")
+                    }
+                }
+            }.navigationBarTitle("Settings")
+        }
     }
 }
 
