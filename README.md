@@ -8,11 +8,12 @@ With Xcode 12+, MacOS 10.15+, and an iOS Simulator running 14+ setup and the rep
 
 ### API Keys
 
-The app stores API keys in Config.xcconfig, which is gitignored. In Xcode, create a new file, and select configuration settings file. Add a NASA api key, or use DEMO_KEY:
+The app stores API keys in Config.xcconfig, which is gitignored. This can be generated using a Ruby script in the Helper directory. Run:
 
 ```
-NASA_API_KEY = DEMO_KEY
+ruby Helper/add_secret.rb
 ```
+When prompted for a key, enter `NASA_API_KEY`. When prompted for a value, enter an API key, or `DEMO_KEY`
 
 ### Running the app
 

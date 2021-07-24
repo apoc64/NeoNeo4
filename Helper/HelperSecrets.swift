@@ -1,7 +1,5 @@
 //
 //  HelperSecrets.swift
-//  NeoNeo4
-//
 //  Created by Steve Schwedt on 7/23/21.
 //
 
