@@ -25,8 +25,8 @@ struct MainTabBarView: View {
                 .tabItem {
                     Image(systemName: "gear")
                     Text("Settings")
-                }
-        }
+            }
+        }.accentColor(.red)
     }
 }
 
