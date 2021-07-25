@@ -15,7 +15,6 @@ struct NeoNeo4App: App {
             loggingPriority: .high,
             dataTaskPublisher: URLSession.shared,
             userDefaultable: UserDefaults.standard,
-            notifiable: NotificationCenter.default,
             analyticsProviding: NoAnalytics())
         
         Helper.configure(config)

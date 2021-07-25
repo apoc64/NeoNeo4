@@ -23,7 +23,6 @@ class TestHelper: NSObject {
         loggingPriority: .required,
         dataTaskPublisher: MockURLSession(),
         userDefaultable: MockUserDefaults(),
-        notifiable: MockNotificationCenter(),
         analyticsProviding: NoAnalytics()
     )
 }

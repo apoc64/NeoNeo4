@@ -1,6 +1,6 @@
 # NeoNeo4
 
-This is an architectural prototype for building apps using SwiftUI and Combine. The iOS app fetches data from public APIs, including NASA near earth objects (NEOs), and displays the result in List Views.
+This is an architectural prototype for building apps using modern Swift. The iOS app fetches data from public APIs, including NASA near earth objects (NEOs), and displays the result in List Views. There is also settings tab with values stored in User Defaults.
 
 ## Setup
 
@@ -13,14 +13,13 @@ The app stores API keys in Config.xcconfig, which is gitignored. This can be gen
 ```
 ruby Helper/add_secret.rb
 ```
-When prompted for a key, enter `NASA_API_KEY`. When prompted for a value, enter an API key, or `DEMO_KEY`
+When prompted for a key, enter `NASA_API_KEY`. When prompted for a value, enter a valid API key, or `DEMO_KEY`
 
 ### Running the app
 
 To run the app on the selected simulator or authorized device, press Command + R, or press the play button in the toolbar.
 
 To run the tests, press Command + U, or use the dropdown from the play button.
-
 
 ## About the App
 
@@ -39,7 +38,6 @@ NetworkingManager.dataTaskPublisher(for: HTTPRequest)  // Replacing URLSession.s
 // -> AnyPublisher<APIResponse, URLError>
 
 UserDefaults.fromContainer  // Replacing UserDefaults.shared
-NotificationCenter.fromContainer  // Replacing NotificationCenter.default
 NSManagedObjectContext.fromContainer.main  // Provides a managed object context
 ```
 
@@ -51,7 +49,6 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
         loggingPriority: .low,
         dataTaskPublisher: URLSession.shared,
         userDefaultable: UserDefaults.standard,
-        notifiable: NotificationCenter.default,
         analyticsProviding: NoAnalytics())
     Helper.configure(config)
 

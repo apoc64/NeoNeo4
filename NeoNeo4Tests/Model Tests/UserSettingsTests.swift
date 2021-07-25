@@ -34,6 +34,9 @@ class UserSettingsTests: XCTestCase {
     func testResetAllSettings() {
         setMockUserDefaults()
         let settings = UserSettings()
+        NotificationCenter.default.addObserver(self, selector: #selector(receiveNotification), name: Notifier(.userSettingsReset), object: nil)
+
+        XCTAssertEqual(didReceiveResetSettingsNotification, false)
         settings.resetAllSettings()
         
         XCTAssertEqual(settings.username, "")
@@ -49,7 +52,11 @@ class UserSettingsTests: XCTestCase {
         XCTAssertEqual(defaults.bool(forKey: keys.isPrivateKey), true)
         XCTAssertEqual(defaults.bool(forKey: keys.notificationsEnabledKey), false)
         XCTAssertEqual(defaults.integer(forKey: keys.isPrivateKey), 0)
+        
+        XCTAssertEqual(self.didReceiveResetSettingsNotification, true)
     }
+    
+    private var didReceiveResetSettingsNotification = false
     
     private func setMockUserDefaults() {
         let keys = UserSettingsKeys.defaultKeys
@@ -58,5 +65,9 @@ class UserSettingsTests: XCTestCase {
         UserDefaults.fromContainer.set(false, forKey: keys.isPrivateKey)
         UserDefaults.fromContainer.set(true, forKey: keys.notificationsEnabledKey)
         UserDefaults.fromContainer.set(2, forKey: keys.previewOptionKey)
+    }
+    
+    @objc private func receiveNotification() {
+        didReceiveResetSettingsNotification = true
     }
 }

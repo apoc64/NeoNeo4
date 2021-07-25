@@ -14,7 +14,6 @@ struct HelperConfig {
     let loggingPriority: LoggingPriority
     let dataTaskPublisher: DataTaskPublishing
     let userDefaultable: UserDefaultable
-    let notifiable: Notifiable
     let analyticsProviding: AnalyticsProviding
 }
 

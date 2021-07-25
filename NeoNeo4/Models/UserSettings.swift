@@ -44,6 +44,8 @@ class UserSettings: ObservableObject {
         isPrivate = true
         notificationsEnabled = false
         previewIndex = 0
+
+        NotificationCenter.default.post(Notification(.userSettingsReset))
     }
     
     private let keys: UserSettingsKeys

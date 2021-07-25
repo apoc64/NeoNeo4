@@ -14,7 +14,6 @@
 		252E138225D0DBA800A10734 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E137625D0DBA800A10734 /* Container.swift */; };
 		252E138325D0DBA800A10734 /* ServiceResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E137725D0DBA800A10734 /* ServiceResponseModel.swift */; };
 		252E138425D0DBA800A10734 /* Date + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E137925D0DBA800A10734 /* Date + Extensions.swift */; };
-		252E138525D0DBA800A10734 /* Notifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E137A25D0DBA800A10734 /* Notifiable.swift */; };
 		252E138625D0DBA800A10734 /* UserDefaultable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E137B25D0DBA800A10734 /* UserDefaultable.swift */; };
 		252E138725D0DBA800A10734 /* HTTPHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E137C25D0DBA800A10734 /* HTTPHelpers.swift */; };
 		252E138825D0DBA800A10734 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E137D25D0DBA800A10734 /* NetworkingManager.swift */; };
@@ -36,7 +35,6 @@
 		252E13B025D0DC8000A10734 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252E13AF25D0DC8000A10734 /* Environment.swift */; };
 		253BEE6F26AB7489002E29AF /* HelperSecrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253BEE6E26AB7489002E29AF /* HelperSecrets.swift */; };
 		2562FCA925D6055A00017123 /* MockUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2562FC9F25D6055A00017123 /* MockUserDefaults.swift */; };
-		2562FCAA25D6055A00017123 /* MockNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2562FCA025D6055A00017123 /* MockNotificationCenter.swift */; };
 		2562FCAB25D6055A00017123 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2562FCA125D6055A00017123 /* MockURLSession.swift */; };
 		2562FCAC25D6055A00017123 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2562FCA225D6055A00017123 /* TestHelper.swift */; };
 		2562FCAD25D6055A00017123 /* CoinViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2562FCA425D6055A00017123 /* CoinViewModelTests.swift */; };
@@ -45,6 +43,7 @@
 		2562FCB025D6055A00017123 /* coinResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 2562FCA825D6055A00017123 /* coinResponse.json */; };
 		25A2020126AC8BB500CF7763 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A2020026AC8BB500CF7763 /* UserSettings.swift */; };
 		25A2020626AC97C600CF7763 /* UserSettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A2020526AC97C600CF7763 /* UserSettingsTests.swift */; };
+		25A2021326ACEA7D00CF7763 /* Notification+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A2021226ACEA7D00CF7763 /* Notification+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +66,6 @@
 		252E137625D0DBA800A10734 /* Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 		252E137725D0DBA800A10734 /* ServiceResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceResponseModel.swift; sourceTree = "<group>"; };
 		252E137925D0DBA800A10734 /* Date + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date + Extensions.swift"; sourceTree = "<group>"; };
-		252E137A25D0DBA800A10734 /* Notifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifiable.swift; sourceTree = "<group>"; };
 		252E137B25D0DBA800A10734 /* UserDefaultable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultable.swift; sourceTree = "<group>"; };
 		252E137C25D0DBA800A10734 /* HTTPHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHelpers.swift; sourceTree = "<group>"; };
 		252E137D25D0DBA800A10734 /* NetworkingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
@@ -92,7 +90,6 @@
 		2562FC9025D6051F00017123 /* NeoNeo4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeoNeo4Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2562FC9425D6051F00017123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2562FC9F25D6055A00017123 /* MockUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockUserDefaults.swift; sourceTree = "<group>"; };
-		2562FCA025D6055A00017123 /* MockNotificationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockNotificationCenter.swift; sourceTree = "<group>"; };
 		2562FCA125D6055A00017123 /* MockURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 		2562FCA225D6055A00017123 /* TestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
 		2562FCA425D6055A00017123 /* CoinViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinViewModelTests.swift; sourceTree = "<group>"; };
@@ -101,6 +98,7 @@
 		2562FCA825D6055A00017123 /* coinResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = coinResponse.json; sourceTree = "<group>"; };
 		25A2020026AC8BB500CF7763 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		25A2020526AC97C600CF7763 /* UserSettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsTests.swift; sourceTree = "<group>"; };
+		25A2021226ACEA7D00CF7763 /* Notification+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +142,7 @@
 		252E136325D0DB7100A10734 /* NeoNeo4 */ = {
 			isa = PBXGroup;
 			children = (
+				25A2021126ACEA6400CF7763 /* Extensions */,
 				252E136D25D0DB7700A10734 /* Info.plist */,
 				252E136825D0DB7700A10734 /* Assets.xcassets */,
 				252E136425D0DB7100A10734 /* NeoNeo4App.swift */,
@@ -248,7 +247,6 @@
 			isa = PBXGroup;
 			children = (
 				252E137725D0DBA800A10734 /* ServiceResponseModel.swift */,
-				252E137A25D0DBA800A10734 /* Notifiable.swift */,
 				252E137B25D0DBA800A10734 /* UserDefaultable.swift */,
 				252E137C25D0DBA800A10734 /* HTTPHelpers.swift */,
 				252E137E25D0DBA800A10734 /* ServiceHelpers.swift */,
@@ -273,7 +271,6 @@
 			isa = PBXGroup;
 			children = (
 				2562FC9F25D6055A00017123 /* MockUserDefaults.swift */,
-				2562FCA025D6055A00017123 /* MockNotificationCenter.swift */,
 				2562FCA125D6055A00017123 /* MockURLSession.swift */,
 				2562FCA225D6055A00017123 /* TestHelper.swift */,
 			);
@@ -312,6 +309,14 @@
 				25A2020526AC97C600CF7763 /* UserSettingsTests.swift */,
 			);
 			path = "Model Tests";
+			sourceTree = "<group>";
+		};
+		25A2021126ACEA6400CF7763 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				25A2021226ACEA7D00CF7763 /* Notification+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,7 +437,7 @@
 				252E139725D0DBD800A10734 /* NeoListView.swift in Sources */,
 				252E13A825D0DC6E00A10734 /* NEOResponse.swift in Sources */,
 				252E138225D0DBA800A10734 /* Container.swift in Sources */,
-				252E138525D0DBA800A10734 /* Notifiable.swift in Sources */,
+				25A2021326ACEA7D00CF7763 /* Notification+Extension.swift in Sources */,
 				252E139825D0DBD800A10734 /* TextListCell.swift in Sources */,
 				252E138925D0DBA800A10734 /* ServiceHelpers.swift in Sources */,
 				253BEE6F26AB7489002E29AF /* HelperSecrets.swift in Sources */,
@@ -455,7 +460,6 @@
 				2562FCAE25D6055A00017123 /* NeoViewModelTests.swift in Sources */,
 				25A2020626AC97C600CF7763 /* UserSettingsTests.swift in Sources */,
 				2562FCAD25D6055A00017123 /* CoinViewModelTests.swift in Sources */,
-				2562FCAA25D6055A00017123 /* MockNotificationCenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
