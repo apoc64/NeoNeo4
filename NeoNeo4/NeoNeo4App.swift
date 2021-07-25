@@ -18,6 +18,8 @@ struct NeoNeo4App: App {
             analyticsProviding: NoAnalytics())
         
         Helper.configure(config)
+        
+        configureAppearance()
     }
     
     
@@ -25,5 +27,9 @@ struct NeoNeo4App: App {
         WindowGroup {
             MainTabBarView()
         }
+    }
+    
+    private func configureAppearance() {
+        UINavigationBar.appearance().backgroundColor = UIColor(red: 0, green: 250, blue: 100, alpha: 1)
     }
 }
