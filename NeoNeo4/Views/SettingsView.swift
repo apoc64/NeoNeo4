@@ -45,14 +45,16 @@ struct SettingsView: View {
                 }
                 
                 Section {
-                    Button(action: {
-                        model.resetAllSettings()
-                    }) {
+                    Button(action: resetAllSettings) {
                         Text("Reset All Settings")
                     }
                 }
             }.navigationBarTitle("Settings")
         }
+    }
+    
+    func resetAllSettings() {
+        model.resetAllSettings()
     }
 }
 
